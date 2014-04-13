@@ -1,0 +1,224 @@
+body {background-image: url('https://scontent-a-fra.xx.fbcdn.net/hphotos-prn2/t31.0-8/966409_757720974247070_3270446095000078830_o.jpg'); 
+	background-repeat: no-repeat; background-attachment: fixed; background-position: center;}
+a {text-decoration: none; color: #F0E68C;}
+.gal_images {margin: 15px; max-width: 750px; max-height: 550px;}
+.titles {font: bold 18px Arial, Helvetica, sans-serif; color: #CCC;}
+
+/*--------------------------- Main -------------------------------*/
+#menu_div {
+	margin: 15px auto 0px auto; 
+	height: 50px;
+	width: 500px; 
+	color: white; 
+}
+
+.content {
+	background: rgba(0,0,0,0.5); 
+	min-width: 700px;
+	max-width: 1600px;
+	min-height: 50px;
+	text-align: center;
+	overflow: hidden;
+
+	margin: 25px auto; 
+	padding: 30px 0; 
+	border-radius: 20px;
+}
+
+.content_para {
+	background-color: #F0E68C; 
+	margin: 25px 25px 40px 25px;
+	padding: 25px;
+	color: black;
+	text-align: center;
+	/*border: 5px solid black; */
+	border-radius: 30px;
+	font-size: 18px;
+}
+
+#top_anchor {
+	background-color: rgba(0,0,0,0.5);
+	padding: 15px;
+	margin: 0 15px;
+	border-radius: 20px; 
+}
+/*--------------------------------------------------------------------*/
+
+
+
+/*-------------------------- Forms-Submits --------------------------------*/
+#menu_form > input, #import_form > input, 
+#image_deletion_form > input, #normal_view_form > input 
+{
+	background-color: rgba(0,0,0,0.5);
+	text-decoration: none; 
+	font: bold 18px Arial, Helvetica, sans-serif;
+	color: #CCC;
+	border: none;
+	transition: all 0.50s linear;
+	border-radius: 20px; 
+}
+#menu_form > input {padding: 15px 0; width: 32%; }
+#import_form > input {padding: 15px;}
+#image_deletion_form > input, #normal_view_form > input 
+{padding: 10px; font-size: 14px;}
+
+#menu_form > input:hover {
+	background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0.3));
+	color: #000; }
+#import_form > input:hover {
+	background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(255,255,255,0.1));}
+#image_deletion_form > input:hover {
+	background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(255,255,255,0.1));}
+#normal_view_form > input:hover {
+	background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(255,255,255,0.1));}
+
+#menu_form > input:focus, #import_form > input:focus, 
+#image_deletion_form > input:focus, #normal_view_form > input:focus 
+{outline: none;}
+
+#normal_view_form { position: absolute; top: 100px; right: 20px; }
+/*---------------------------------------------------------------*/
+
+
+
+/*------------------------- Header ----------------------------*/
+#header, #header_eye {
+	border-radius: 35px;
+}
+#header { 
+	width: 450px;
+	height: 100px; 
+	margin: 10px auto;
+	/*position: absolute;
+	top: 10px;
+	left: 725px;*/
+}
+#header_eye {
+	background-color: rgba(255,255,255,0.8); 
+	border: 1px solid #2B3856;
+	width: 20px; 
+	height: 20px; 
+	position: absolute;
+	top: 45px;
+	left: 755px;
+	animation: second_blink 5s infinite;
+	-webkit-animation: second_blink 5s infinite; /*Safari and Chrome:*/
+	animation-delay:2.5s;
+	-webkit-animation-delay:2.5s;
+}
+@keyframes second_blink { 2% { background-color: rgba(0,0,0,0.9);  } 4% { background-color: rgba(255,255,255,0.8);  } 100% {background-color: rgba(255,255,255,0.8); } }
+@-webkit-keyframes second_blink { 2% { background-color: rgba(0,0,0,0.9);  } 4% { background-color: rgba(255,255,255,0.8);  } 100% {background-color: rgba(255,255,255,0.8); } }
+
+.pupils {
+	background-color: rgba(21, 27, 141, 0.8);
+	border-radius: 20px; 
+	width: 10px; 
+	height: 10px;
+	position: relative;
+	top: 5px;
+	left: 5px;
+	animation: third_blink 5s infinite;
+	-webkit-animation: third_blink 5s infinite; /*Safari and Chrome:*/
+	animation-delay:2.5s;
+	-webkit-animation-delay:2.5s;
+}
+@keyframes third_blink { 2% { background-color: rgba(0,0,0,0.9);  } 4% { background-color: rgba(21, 27, 141, 0.8); } 100% {background-color: rgba(21, 27, 141, 0.8);} }
+@-webkit-keyframes third_blink { 2% { background-color: rgba(0,0,0,0.9);  } 4% { background-color: rgba(21, 27, 141, 0.8); } 100% {background-color: rgba(21, 27, 141, 0.8);} }
+
+#header_title {
+	font: bold 85px Arial, Helvetica, sans-serif;
+	color: #2B3856;
+}
+/*----------------------------------------------------------*/
+
+
+
+
+/*-------------------- Follow us ------------------------------- */
+.follow_icons { width: 64px; height: 64px; }
+#facebook, #twitter, #deviantart, #github { position: absolute; top: 13px; }
+#facebook {right: 200px;}
+#twitter {right: 140px;}
+#deviantart_icon {width: 84px; height: 84px;}
+#deviantart {top: 3px; right: 70px;}
+#github {right: 20px;}
+
+#follow_us_block {
+	background-color: rgba(0,0,0,0.5);
+	border-bottom-left-radius: 30px; 
+	width: 300px;
+	height: 90px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+#follow_us_bg { 
+	background-color: rgba(255,255,255,0.8); border-radius: 30px;
+	width: 280px; height: 70px; margin: 10px;}
+/*---------------------------------------------------------------*/
+
+
+
+/*------------------------- Null Field ----------------------------*/
+
+#null_field, #null_r-eye, #null_l-eye { 
+	background: rgba(0,0,0,0.3); 
+	position: absolute;
+	border-radius: 10px; 
+	transition: all 0.7s linear;
+}
+#null_field {
+	width: 100px; height: 100px; 
+	top: 20px; left: 40px;
+	z-index: 1;
+}
+#null_r-eye, #null_l-eye {
+	width: 20px; height: 20px; 
+	animation: blink 3s infinite;
+	-webkit-animation: blink 3s infinite; /*Safari and Chrome:*/
+	animation-delay:1s;
+	-webkit-animation-delay:1s;
+}
+@keyframes blink { 5% { height: 0px; } 10% { height: 20px; } 100% {height: 20px;} }
+@-webkit-keyframes blink { 5% {height: 0px;} 10% {height: 20px;} 100% {height: 20px;} } 
+
+#null_r-eye {top: 20px; left: 35px;}
+#null_l-eye {top: 20px; left: 65px;}
+
+#null_field:hover { border-radius: 80px; background: rgba(102,205,0,0.7);} 
+#null_field:hover > #null_r-eye {left: 25px;}
+#null_field:hover > #null_l-eye {left: 55px;}
+/*----------------------------------------------------------*/
+
+
+
+/*------------------------- Gallery --------------------------*/
+#gallery_footer {
+	background: rgba(0,0,0,0.5);
+	width: 1600px;
+	margin: 25px auto 0 auto;
+	padding: 15px 0;
+	position: relative; 
+	top: 15px;
+	text-align: center;
+	font: bold 18px Arial, Helvetica, sans-serif;
+	color: #CCC;
+	border-top-left-radius: 20px; 
+	border-top-right-radius: 20px;
+}
+/*-----------------------------------------------------*/
+
+
+
+/*------------------------- About ----------------------------*/
+#us {border-radius: 20px;}
+#left_para {float: left; margin: 30px; }
+#right_para {float: right; margin: 30px; }
+/*---------------------------------------------------------*/
+
+
+/*------------------------- Dummies ----------------------------*/
+.hide {display: none;}
+/*---------------------------------------------------------*/
+
