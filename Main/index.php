@@ -18,14 +18,23 @@
 		</div>
 
 
+
+		<div id="header">
+			<a href="http://charleston.zapto.org">
+				<img src="Other/charleston.png" alt="charleston">
+			</a>
+		</div>
+		
+
+
 		<div id="follow_us_block">
 			<div id="follow_us_bg">
-				<a class="click" href="https://www.facebook.com/CharlieScene37" id="facebook">
-		            <img src="Other/facebook.png" class="follow_icons" alt="facebook_icon">
+				<a href="https://www.facebook.com/CharlieScene37" id="facebook">
+		            <img src="Other/facebook.png" id="facebook_icon" class="follow_icons" alt="facebook_icon">
 				</a>
 				
 				<a href="https://twitter.com/ChScarver" id="twitter">
-					<img src="Other/twitter.png" class="follow_icons" alt="twitter_icon">
+					<img src="Other/twitter.png" id="twitter_icon" class="follow_icons" alt="twitter_icon">
 				</a>
 
 				<a href="http://danniesaurus.deviantart.com" id="deviantart">
@@ -33,29 +42,10 @@
 				</a>
 
 				<a href="https://github.com/CharlieScarver" id="github">
-					<img src="Other/github.png" class="follow_icons" id="github_icon" alt="github_icon">
+					<img src="Other/github.png" id="github_icon" class="follow_icons" alt="github_icon">
 				</a>
 			</div>
 		</div>
-
-
-		<a href="http://charleston.zapto.org"> 
-			<div id="header">
-				<span id="header_title"> Charleston </span>
-
-				<div id="header_eye">
-					<div class="pupils"> </div>
-				</div>
-			</div>
-		</a>
-		<?php
-			if (isset($_GET['page']) && $_GET['page'] != 'Home') {		
-				echo "
-				<style type=\"text/css\">
-					#header_eye {left: 747;}
-				</style>";
-			}
-		?>
 
 
 		<div id="menu_div">
