@@ -8,5 +8,4 @@ We love photography and would like to share our passion with you.
 Enjoy your visit. 
 
 - Charleston's crew
-
 =
