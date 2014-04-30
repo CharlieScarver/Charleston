@@ -31,7 +31,7 @@ if (isset($_POST['DeleteImage'])) { // Delete Image => name
 			unlink($file);
 		} // delete image
 
-		$file = "Gallery/Thumbnails/" . $_POST['image_id'] . "." . $ext;
+		$file = "Gallery/Pictures/Thumbnails/" . $_POST['image_id'] . "." . $ext;
 		if (file_exists($file) && is_readable($file)) {
 			unlink($file);
 		} // delete thumbnail
@@ -40,4 +40,3 @@ if (isset($_POST['DeleteImage'])) { // Delete Image => name
 } 
 
 ?>
-

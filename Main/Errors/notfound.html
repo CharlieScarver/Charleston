@@ -45,38 +45,26 @@
 					<img src="Other/github.png" id="github_icon" class="follow_icons" alt="github_icon">
 				</a>
 			</div>
-		</div>
-
-
-		<div id="menu_div">
-			<form method="GET" id="menu_form">
-				
-					<input type="submit" name="page" value="Home">
-					<input type="submit" name="page" value="Gallery">
-					<input type="submit" name="page" value="About">
-
-			</form>
 		</div>	
 		
+		<div id="nf_content" class="content">
+			<div id="nf_l_eye">
+				<img id="sharingan" src="Other/sharingan.png" alt="Sharingan"> 
+			</div>
+			<div id="nf_r_eye"></div>
+			<p id="nf_content_para" class="content_para">
+				<b>Error 404</b> <br>
+				<br>
+				Your page could not be found, sorry. <br>
+				Check for misspelled words in the url. <br>
+				<br>
+				Thank you for visiting <a href="http://charleston.zapto.org"><b>Charleston</b></a>. <br>
+				<br>
+					- Us
+			</p>
 
-		<?php
+		</div>
+		
+	</body>
+</html>
 
-		if(isset($_GET['page'])) {
-				
-			switch ($_GET['page']) {
-				case 'Home':
-					require_once 'home.php';
-					break;
-				case 'Gallery':
-					require_once 'Gallery/gallery.php';
-					break;
-				case 'About':
-					require_once 'About/about.php';
-					break;
-			}
-
-		} else {
-			require_once 'home.php';
-		}
-
-		?>

@@ -11,8 +11,11 @@ function createThumb( $pathToImage, $pathToThumb, $thumbWidth )
 
     // load image and get image size
     $img = imagecreatefromjpeg( "{$pathToImage}" );
+      if (!$img)
+        return false;
     $width = imagesx( $img );
     $height = imagesy( $img );
+
 
     // calculate thumbnail size
     $new_width = $thumbWidth;
@@ -20,14 +23,20 @@ function createThumb( $pathToImage, $pathToThumb, $thumbWidth )
 
     // create a new temporary image
     $tmp_img = imagecreatetruecolor( $new_width, $new_height );
+      if (!$tmp_img)
+        return false;
 
     // copy and resize old image into new image 
-    imagecopyresized( $tmp_img, $img, 0, 0, 0, 0, $new_width, $new_height, $width, $height );
+    if (!imagecopyresized( $tmp_img, $img, 0, 0, 0, 0, $new_width, $new_height, $width, $height ))
+      return false;
 
     // save thumbnail into a file
-    imagejpeg( $tmp_img, "{$pathToThumb}" );
+    if (!imagejpeg( $tmp_img, "{$pathToThumb}" ))
+      return false;
 
     return true;
+  } else {
+    return false;
   }
 }
 // call createThumb function and pass to it as parameters the path 
@@ -36,6 +45,6 @@ function createThumb( $pathToImage, $pathToThumb, $thumbWidth )
 // We are assuming that the path will be a relative path working 
 // both in the filesystem, and through the web for links
 
-//createThumb("Pictures/photography_gallery/","Thumbnails/",750);
+//createThumb("Pictures/photography_gallery/","Pictures/Thumbnails/",750);
 
 ?>

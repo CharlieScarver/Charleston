@@ -1,0 +1,2 @@
+ErrorDocument 404 /Errors/notfound.html
+ErrorDocument 403 /Errors/permdenied.html

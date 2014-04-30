@@ -1,27 +1,20 @@
 <?php
 
-$connect = mysql_connect("localhost","root","rootpass"); //connect to DB
-	if (!$connect) //Check is connection was successful
-		echo "Failed to connect!";
-
-	if (!mysql_select_db("charleston")) //Check is DB selection was successful
-		echo "Failed to select DB!";
+require_once 'Gallery/data_getter.php';
 
 $gallery_name = "photography_gallery";
-$results = mysql_query("SELECT * FROM `$gallery_name`");
+$pics = getImgData();
+$i = count($pics) - 1;
+echo $i;
+
+$i--;
+while($i > -1) { 
+	$alt = $pics[$i]['Alt'];
+	$thumb_src = "Gallery/Pictures/Thumbnails/" . $alt . ".jpg";
+	$results = mysql_query("UPDATE `$gallery_name` SET `ThumbSource` = '$thumb_src' WHERE `Alt` = '$alt'");
 	if (!$results)  // Succession check
-		echo "Failed to select elements! :c<br>";
-
-require_once 'Gallery/thumbnail_creator.php';	
-
-while($row = mysql_fetch_array($results)) { 
-	$pics['ImgSource'] = $row['ImgSource']; 
-	$pics['ThumbSource'] = $row['ThumbSource']; 
-	$pics['Alt'] = $row['Alt']; 
-	$pics['Extension'] = $row['Extension']; 
-	
-	createThumb("{$pics['ImgSource']}", "{$pics['ThumbSource']}", 750);
+		echo "Failed to update entry $i! :c<br>";
+	$i--;
 }
-
 
 ?>
