@@ -493,7 +493,7 @@ button:hover {background-color: rgba(27,161,226,1.0);}
 	border-width: 7px;
 	border-color: rgba(255,255,255,0.5);
 }
-#blue_theme_submit:hover {	border-color: rgba(255,255,255,0.2);}
+#blue_theme_submit:hover {border-color: rgba(255,255,255,0.2);}
 
 #red_theme_submit
 {
@@ -502,7 +502,22 @@ button:hover {background-color: rgba(27,161,226,1.0);}
 	border-width: 7px;
 	border-color: rgba(255,255,255,0.5);
 }
-#red_theme_submit:hover {	border-color: rgba(255,255,255,0.2);}
+#red_theme_submit:hover {border-color: rgba(255,255,255,0.2);}
+
+/*------------------Link to Photography Charleston-----------------*/
+
+#photography_link {
+	background-color: rgba(27,161,226,0.5);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding: 3px 5px 5px 3px;
+	border-bottom-right-radius: 15px; 
+	opacity: 0.8;
+	filter:alpha(opacity=80);
+}
+#photography_link:hover {background-color: rgba(27,161,226,1.0); opacity: 1; filter:alpha(opacity=100);}
+
 
 /*
 

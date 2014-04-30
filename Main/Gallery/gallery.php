@@ -37,11 +37,6 @@
 
 		</div>
 
-		<div id="null_field">
-			<div id="null_l-eye"></div>
-			<div id="null_r-eye"></div>
-		</div>
-
 		<?php
 			if (in_array($ip, $GLOBALS['admins'])) {
 				echo "

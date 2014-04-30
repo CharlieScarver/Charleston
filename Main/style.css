@@ -82,67 +82,26 @@ a {text-decoration: none; color: #F0E68C;}
 
 
 
-/*------------------------- Header ----------------------------*/
-#header, #header_eye {
-	border-radius: 35px;
-}
-#header { 
-	width: 450px;
+/*------------------------- Header Img ---------------------------*/
+
+#header {
+	width: 525px;
 	height: 100px; 
 	margin: 10px auto;
-	/*position: absolute;
-	top: 10px;
-	left: 725px;*/
 }
-#header_eye {
-	background-color: rgba(255,255,255,0.8); 
-	border: 1px solid #2B3856;
-	width: 20px; 
-	height: 20px; 
-	position: absolute;
-	top: 45px;
-	left: 755px;
-	animation: second_blink 5s infinite;
-	-webkit-animation: second_blink 5s infinite; /*Safari and Chrome:*/
-	animation-delay:2.5s;
-	-webkit-animation-delay:2.5s;
-}
-@keyframes second_blink { 2% { background-color: rgba(0,0,0,0.9);  } 4% { background-color: rgba(255,255,255,0.8);  } 100% {background-color: rgba(255,255,255,0.8); } }
-@-webkit-keyframes second_blink { 2% { background-color: rgba(0,0,0,0.9);  } 4% { background-color: rgba(255,255,255,0.8);  } 100% {background-color: rgba(255,255,255,0.8); } }
 
-.pupils {
-	background-color: rgba(21, 27, 141, 0.8);
-	border-radius: 20px; 
-	width: 10px; 
-	height: 10px;
-	position: relative;
-	top: 5px;
-	left: 5px;
-	animation: third_blink 5s infinite;
-	-webkit-animation: third_blink 5s infinite; /*Safari and Chrome:*/
-	animation-delay:2.5s;
-	-webkit-animation-delay:2.5s;
-}
-@keyframes third_blink { 2% { background-color: rgba(0,0,0,0.9);  } 4% { background-color: rgba(21, 27, 141, 0.8); } 100% {background-color: rgba(21, 27, 141, 0.8);} }
-@-webkit-keyframes third_blink { 2% { background-color: rgba(0,0,0,0.9);  } 4% { background-color: rgba(21, 27, 141, 0.8); } 100% {background-color: rgba(21, 27, 141, 0.8);} }
-
-#header_title {
-	font: bold 85px Arial, Helvetica, sans-serif;
-	color: #2B3856;
-}
 /*----------------------------------------------------------*/
 
 
 
 
 /*-------------------- Follow us ------------------------------- */
-.follow_icons { width: 64px; height: 64px; }
-#facebook, #twitter, #deviantart, #github { position: absolute; top: 13px; }
-#facebook {right: 200px;}
-#twitter {right: 140px;}
-#deviantart_icon {width: 84px; height: 84px;}
-#deviantart {top: 3px; right: 70px;}
-#github {right: 20px;}
+.follow_icons 
+{ width: 64px; height: 64px; position: absolute; top: 13px; }
+#facebook_icon {right: 200px;}
+#twitter_icon {right: 140px;}
+#deviantart_icon {width: 84px; height: 84px; top: 3px; right: 70px;}
+#github_icon {right: 20px;}
 
 #follow_us_block {
 	background-color: rgba(0,0,0,0.5);

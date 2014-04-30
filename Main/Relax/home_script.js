@@ -1,10 +1,11 @@
 /////////////Ctrl disable code///////////////////
-
+/*
 	var isCtrl = false;
     document.onkeyup = function(e) {
 	    if(e.which == 17)
 	    isCtrl=false;
 	}
+  */
 	/*
     document.onkeydown=function(e) {
     	if(e.which == 17)
@@ -16,11 +17,12 @@
    		}
 
    		^ In F12 disable code
-    } */
+    } 
+  //
 
-
+*/
 /////////////F12 disable code///////////////////
-
+/*
     document.onkeypress = function (event) {
         event = (event || window.event);
         if (event.keyCode == 123) {
@@ -45,7 +47,7 @@
     		// No Ctrl+U and Ctrl+C
     		return false;
    		} 
-      */
+      //
     }
 
     function disableF12 (event) {
@@ -55,14 +57,14 @@
             return false;
         }
     }
-
+*/
 /////////////////////Right Click disable code///////////////////////
-
+/*
 document.oncontextmenu = function (event) {
     return false;
     // No Right click
    }
-
+*/
 /////////////////////end///////////////////////
  
 function showTip () {

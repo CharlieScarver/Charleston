@@ -1,4 +1,5 @@
 <?php
+require_once 'thumbnail_creator.php';
 
 if(isset($_POST['Import'])) {
 	$allowedExts = array("gif", "jpeg", "jpg", "png", "JPG");
@@ -24,6 +25,14 @@ if(isset($_POST['Import'])) {
 		    } else {
 		      	move_uploaded_file($_FILES["file"]["tmp_name"], "Gallery/Pictures/photography_gallery/" . $_FILES["file"]["name"]);
 
+		      	$gallery_name = "photography_gallery";
+				$img_src = "Gallery/Pictures/photography_gallery/" . $_FILES["file"]["name"];
+		      	$thumb_src = "Gallery/Thumbnails/" . $_FILES["file"]["name"];
+		      	$name = explode('.', $_FILES["file"]["name"]);
+		      	$alt = $name[0];
+
+		      	createThumb("$img_src", "$thumb_src", 750);
+
 		      	$connect = mysql_connect("localhost","root","rootpass"); //connect to DB
 				if (!$connect) { //Check is connection was successful
 					echo "Failed to connect!";
@@ -33,11 +42,7 @@ if(isset($_POST['Import'])) {
 					echo "Failed to select DB!";
 				}
 
-				$gallery_name = "photography_gallery";
-				$src = "Gallery/Pictures/photography_gallery/" . $_FILES["file"]["name"];
-		      	$name = explode('.', $_FILES["file"]["name"]);
-		      	$alt = $name[0];
-		      	$results = mysql_query("INSERT INTO `$gallery_name` (`Source`, `Alt`, `Extension`) VALUES ('$src', '$alt', '$extension')");
+		      	$results = mysql_query("INSERT INTO `$gallery_name` (`ImgSource`, `ThumbSource`, `Alt`, `Extension`) VALUES ('$img_src', '$thumb_src', '$alt', '$extension')");
 		      	if (!$results)  // Succession check
 					echo "Failed to import image! :c<br>";
 		    }

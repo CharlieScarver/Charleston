@@ -43,6 +43,10 @@
 		<button id="tip_button_show" onclick="showTip()"><b> :) </b></button>
 		<div id="tip"><p id="tip_text"> Use Full Screen (F11) for better experience :) </p></div>
 
+		<a id="photography_link" href="http://charleston.zapto.org"> 
+				Back to the Photography section
+		</a> 
+
 		<a href="http://charleston.zapto.org/Relax"> <p id="title"> CHARLESTON </p> </a>
 		
 		

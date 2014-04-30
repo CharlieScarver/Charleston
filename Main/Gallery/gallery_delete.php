@@ -22,13 +22,19 @@ if (isset($_POST['DeleteImage'])) { // Delete Image => name
 	//echo "ext - {$ext}";
 
 	$results = mysql_query("DELETE FROM `$gallery_name` WHERE `Alt` = '$img_id'");
+	// delete database entry
 	if (!$results)  // Succession check
 		echo "Failed to delete image! :c<br>";
 	else {
 		$file = "Gallery/Pictures/photography_gallery/" . $_POST['image_id'] . "." . $ext;
 		if (file_exists($file) && is_readable($file)) {
 			unlink($file);
-		}
+		} // delete image
+
+		$file = "Gallery/Thumbnails/" . $_POST['image_id'] . "." . $ext;
+		if (file_exists($file) && is_readable($file)) {
+			unlink($file);
+		} // delete thumbnail
 	}
 
 } 

@@ -9,7 +9,7 @@
 				We love photography and would like to share our passion with you. <br>
 				Enjoy your visit. <br>
 				<br>
-					- We
+					- Us
 			</p>
 
 			<a href="http://charleston.zapto.org/Relax">
@@ -30,6 +30,9 @@
 			</p>
 
 		</div>
+
+		<!-- <img src="myimg.php"> -->
+		
 	</body>
 </html>
 

@@ -29,19 +29,19 @@
 
 		<div id="follow_us_block">
 			<div id="follow_us_bg">
-				<a href="https://www.facebook.com/CharlieScene37" id="facebook">
+				<a href="https://www.facebook.com/CharlieScene37">
 		            <img src="Other/facebook.png" id="facebook_icon" class="follow_icons" alt="facebook_icon">
 				</a>
 				
-				<a href="https://twitter.com/ChScarver" id="twitter">
+				<a href="https://twitter.com/ChScarver">
 					<img src="Other/twitter.png" id="twitter_icon" class="follow_icons" alt="twitter_icon">
 				</a>
 
-				<a href="http://danniesaurus.deviantart.com" id="deviantart">
+				<a href="http://danniesaurus.deviantart.com">
 					<img src="Other/deviantart.png" id="deviantart_icon" class="follow_icons" alt="deviantart_icon">
 				</a>
 
-				<a href="https://github.com/CharlieScarver" id="github">
+				<a href="https://github.com/CharlieScarver">
 					<img src="Other/github.png" id="github_icon" class="follow_icons" alt="github_icon">
 				</a>
 			</div>
