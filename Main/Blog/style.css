@@ -1,0 +1,76 @@
+body {background-color: #2B1B17; 
+	background-repeat: no-repeat; background-attachment: fixed; background-position: center;}
+a {text-decoration: none; color: #F0E68C;}
+textarea {resize: none;}
+
+/*--------------------------- Header -------------------------------*/
+#header {
+	background-color: #6A8455;
+	border-radius: 30px;
+	width: 490px;
+	height: 100px; 
+	margin: 15px auto 0px auto;
+	transition: all 0.50s linear;
+}
+#header:hover {background-color: #488214;}
+
+/*--------------------------- Main -------------------------------*/
+#main_div {
+	width: 700px;
+	margin: 0 auto;
+	padding-top: 15px;
+}
+
+.post {
+	background-color: #6A8455;
+	border-radius: 30px;
+	padding: 3px 20px;
+	margin: 20px auto 0 auto;
+	transition: all 0.50s linear;
+}
+.post:hover {background-color: #488214;}
+
+.post_content {font: bold 18px Arial, Helvetica, sans-serif;}
+
+/*--------------------------- New Post -------------------------------*/
+#new_post_div {
+	width: 250px;
+	margin: 0;
+	padding: 0;
+	border-bottom-right-radius: 30px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(0,0,0,0.6);
+}
+
+#new_post_form {margin: 15px; color: white;}
+#new_post_form > input { margin: 5px auto 0 auto;}
+
+#new_post_submit, #new_post_button {
+	color: green;
+	padding: 7px 12px;
+	border-radius: 10px;
+	border: none;
+	font: bold 18px Arial, Helvetica, sans-serif;
+	transition: all 0.50s linear;
+}
+
+#new_post_button { margin: 30px auto 0 auto; display: block; background-color: rgba(0,0,0,0.6); }
+#new_post_button:hover { background-color: rgba(72,130,20,0.8); color: black;}
+#new_post_button:active { transition: all 0.01s linear; color: #CCC;}
+
+#new_post_submit:focus, #new_post_button:focus {outline: none;}
+
+
+#photography_link {
+	background-color: rgba(72,130,20,0.8);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding: 3px 5px 5px 3px;
+	border-bottom-right-radius: 15px; 
+	opacity: 0.8;
+	filter:alpha(opacity=80);
+}
+#photography_link:hover {background-color: rgba(72,130,20,1.0); opacity: 1; filter:alpha(opacity=100);}

@@ -4,7 +4,7 @@
 			<p class="content_para">
 				<b>Welcome</b> <br>
 				<br>
-				Hello and welcome to our site! <br>
+				Hello and welcome to Charleston! <br>
 				Here you will find some of the pictures We, two non-professional photographers, take. <br>
 				We love photography and would like to share our passion with you. <br>
 				Enjoy your visit. <br>
@@ -12,12 +12,18 @@
 					- Us
 			</p>
 
-			<a href="http://charleston.zapto.org/Relax">
-				<div class="content_para">
-					<b>Check out our relaxation section, too!</b>
-				</div>
-			</a>
+			
+			<div id="sections_div">
+				<b>You can also check our:</b><br>
+				<br>
+				<a href="http://charleston.zapto.org/Blog">
+					<button id="blog_section_button" class="section_button">Blog</button>
+				</a>
 
+				<a href="http://charleston.zapto.org/Relax">
+					<button id="relax_section_button" class="section_button">Relax section</button>
+				</a>
+			</div>
 			
 		</div>
 

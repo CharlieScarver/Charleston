@@ -45,7 +45,7 @@ a {text-decoration: none; color: #F0E68C;}
 
 
 
-/*-------------------------- Form-Submits --------------------------------*/
+/*-------------------------- Forms-Submits --------------------------------*/
 #menu_form > input, #import_form > input, 
 #image_deletion_form > input, #normal_view_form > input 
 {
@@ -87,25 +87,8 @@ a {text-decoration: none; color: #F0E68C;}
 	margin: 10px auto;
 }
 
-/*------------------------- Section Buttons ---------------------------*/
-#sections_div, .section_button {
-	color: #CCC;
-	font: bold 18px Arial, Helvetica, sans-serif;
-}
 
-.section_button {
-	min-width: 75px;
-	padding: 5px 10px;
-	margin: 0 10px;
-	border: none;
-	border-radius: 20px;
 
-	background-color: rgb(176,196,222);
-	color: black;
-	transition: all 0.5s linear;
-}
-#relax_section_button:hover { color: #F0F8FF; background-color: rgb(100,149,237); }
-#blog_section_button:hover { color: #2B1B17; background-color: #488214; }
 
 
 /*-------------------- Follow us ------------------------------- */
@@ -185,8 +168,6 @@ a {text-decoration: none; color: #F0E68C;}
 #left_para {float: left; margin: 30px; }
 #right_para {float: right; margin: 30px; }
 
-/*------------------------- Blog ------------------------------*/
-.post { }
 
 /*---------------------- 404 Not Found ---------------------*/
 #nf_content {min-width: 350px; width: 400px; height: 325px; /*border-radius: 200px;*/}

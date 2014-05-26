@@ -28,7 +28,7 @@
 				Enchanting. Beautiful. Insane. <br>Funny. Sweet. Tender. Brilliant. <br>All of this and more. 
 				She's full of life. <br>An artist, a dancer, a nymph, a psychologist, an experimenter. <br>And she cooks. 
 				She shines, while smiling. <br>Her ember eyes are full of honesty, love and sparks. <br>
-				If I fall, she'll always catch me. Then she'll be pround of it. <br>And then she'll trip on something and someone'll get hurt. <br>
+				If I fall, she'll always catch me. Then she'll be proud of it. <br>And then she'll trip on something and someone'll get hurt. <br>
 				She provokes me, makes me think more, do more, care more. <br>I can never show my appreciation of what she's doing for me. <br>
 				Infinity is her domain and The Eight is her medium. <br>She has the bravery to pray and the will to want. <br>
 				She likes smoke, candles, lanterns and christmas lights. <br>She loves chocolate. <br>
