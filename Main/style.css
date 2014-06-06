@@ -1,7 +1,6 @@
 body {background-image: url('https://scontent-a-fra.xx.fbcdn.net/hphotos-prn2/t31.0-8/966409_757720974247070_3270446095000078830_o.jpg'); 
 	background-repeat: no-repeat; background-attachment: fixed; background-position: center;}
 a {text-decoration: none; color: #F0E68C;}
-.gal_images {margin: 15px; max-width: 750px; max-height: 550px;}
 .titles {font: bold 18px Arial, Helvetica, sans-serif; color: #CCC;}
 
 /*--------------------------- Main -------------------------------*/
@@ -14,7 +13,7 @@ a {text-decoration: none; color: #F0E68C;}
 
 .content {
 	background: rgba(0,0,0,0.5); 
-	min-width: 700px;
+	min-width: 600px;
 	max-width: 1600px;
 	min-height: 50px;
 	text-align: center;
@@ -164,9 +163,11 @@ a {text-decoration: none; color: #F0E68C;}
 
 
 /*------------------------- Gallery --------------------------*/
+.gal_images {margin: 15px; max-width: 750px; max-height: 550px;}
+
 #gallery_footer {
 	background: rgba(0,0,0,0.5);
-	width: 1600px;
+	width: 85%;
 	margin: 25px auto 0 auto;
 	padding: 15px 0;
 	position: relative; 
@@ -176,6 +177,30 @@ a {text-decoration: none; color: #F0E68C;}
 	color: #CCC;
 	border-top-left-radius: 20px; 
 	border-top-right-radius: 20px;
+}
+
+#focus_big {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(127,127,127,0.5);
+	z-index: 2;
+}
+
+#focus_small {
+	max-width: 1040px; 
+	max-height: 1040px;
+	background-color: #CCC;
+	margin: 100px auto;
+	text-align: center;
+}
+
+#focus_small > img {
+	max-width: 1000px; 
+	max-height: 800px;
+	margin: 20px;
 }
 
 
@@ -240,5 +265,41 @@ a {text-decoration: none; color: #F0E68C;}
 
 /*------------------------- Dummies ----------------------------*/
 .hide {display: none;}
+#too_small_div { 
+	display: none; 
+	width: 100%; height: 100%; 
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(0,0,0,0.7);
+	z-index: 2;
+	text-align: center; 
+	font: bold 18px Arial, Helvetica, sans-serif; 
+	color: #CCC;
+}
+#too_small_div > p {padding: 30px;}
 
 
+/*------------------------- Responsive ----------------------------*/
+
+@media all and (max-width: 1600px) and (min-width: 1201px) {
+
+	#about_content { width: 600px; }
+
+}
+
+@media all and (max-width: 1200px) and (min-width: 601px) {
+
+	#null_field, #null_r_eye, #null_l_eye { display: none; }
+	#follow_us_block { display: none; }
+	#about_content { width: 600px; }
+
+}
+
+@media all and (max-width: 601px) {
+
+	#null_field, #null_r_eye, #null_l_eye { display: none; }
+	#follow_us_block { display: none; }
+	#about_content { width: 600px; }
+	#too_small_div { display: block; }
+}

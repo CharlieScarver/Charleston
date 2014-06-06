@@ -33,8 +33,7 @@ $results = mysql_query("SELECT * FROM `blog_posts`");
 			if (!$results) {
 				echo "Failed to insert elements! :c<br>";
 			} else {
-				header("Location: http://charleston.zapto.org/Blog");
-				exit;
+				echo("<meta http-equiv=\"refresh\" content=\"0\">");
 			}
 	} else { echo "NILL VALUES!"; }
 }

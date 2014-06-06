@@ -5,12 +5,22 @@
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="style.css" media="screen">
 		<script type="text/JavaScript" src="Gallery/gallery_script.js"></script>
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
 		<link rel="shortcut icon" href="Other/icon.png" />
 
 	</head>
+
+	<div id="too_small_div">
+			<p>
+			<b>Why are you doing this?! &nbsp T.T</b><br>
+			<br>
+			Please maximize your browser... please...
+			</p>
+	</div>
+
 	<body>
 		<a href="#top"></a>
-
 
 		<div id="null_field">
 			<div id="null_l_eye"></div>

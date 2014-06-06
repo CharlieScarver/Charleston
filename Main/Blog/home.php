@@ -2,10 +2,11 @@
 			<form id="new_post_form" method="POST">
 
 				<label for="Author"> Author: </label><br>
-				<input type="text" name="Author" id="Author" maxlength="50" required>
+				<input type="text" name="Author" id="Author" maxlength="50" required placeholder="Author">
+				<br>
 				<br>
 				<label for="Content"> Content: </label><br>
-				<textarea name="Content" id="Content" rows="4" cols="20" maxlength="1024" required></textarea>
+				<textarea name="Content" id="Content" rows="7" cols="25" maxlength="1024" required placeholder="Post"></textarea>
 				<br>
 				<br>
 				<?php

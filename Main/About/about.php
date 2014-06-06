@@ -1,5 +1,5 @@
 		
-		<div class="content">
+		<div class="content" id="about_content">
 			<p class="content_para"> 
 			<b>I love you.</b> <br>
 			- Me
