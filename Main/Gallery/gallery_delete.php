@@ -16,10 +16,11 @@ if (isset($_POST['DeleteImage'])) { // Delete Image => name
 		if (!$results)  // Succession check
 			echo "Failed to select elements! :c<br>";
 
+	//$ext = ".jpg";
 	while($row = mysql_fetch_array($results)) { 
 		$ext = $row['Extension'];
 	}
-	//echo "ext - {$ext}";
+	echo "ext - {$ext}";
 
 	$results = mysql_query("DELETE FROM `$gallery_name` WHERE `Alt` = '$img_id'");
 	// delete database entry

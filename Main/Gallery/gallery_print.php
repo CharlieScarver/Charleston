@@ -17,7 +17,13 @@ while($i > -1) {
 			</form>
 		</div>";
 	} else {
-		echo "<a href=\"{$pics[$i]['ImgSource']}\"><img src=\"{$pics[$i]['ThumbSource']}\" alt=\"{$pics[$i]['Alt']}\" class=\"gal_images\" id=\"{$pics[$i]['ID']}\" /></a>";
+		 
+		list($w, $h) = getimagesize($pics[$i]['ThumbSource']);
+		//echo "<div>width - " . $w . "<br>";
+		//echo "height - " . $h . "<br></div>";
+
+		echo "<img src=\"{$pics[$i]['ThumbSource']}\" alt=\"{$pics[$i]['Alt']}\" class=\"gal_images\" id=\"{$pics[$i]['ID']}\" />";
+
 	}
 	$i--;
 }

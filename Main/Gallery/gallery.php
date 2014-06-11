@@ -58,33 +58,6 @@
 		<div id="focus_big">
 			<div id="focus_small">
 
-				<?php
-				/*
-				
-
-				$id = 31;
-
-				if (isset($_GET['n']))	{
-					require_once 'data_getter.php';	
-
-					$id = $_GET['n'];
-
-					$pics = getImgData();
-					$i = count($pics) - 1;
-					while ($i > -1) {
-						if ($pics[$i]['ID'] == $id) 
-							break;
-			
-						$i--;
-					}
-
-					echo "<img src=\"{$pics[$i]['ImgSource']}\" alt=\"{$pics[$i]['Alt']}\" id=\"{$pics[$i]['ID']}\" onclick=\"f({$pics[$i]['ID']})\"/>";
-				}
-
-				
-				*/
-				?>
-
 			</div>
 		</div>
 			
@@ -93,15 +66,36 @@
 		$("#focus_big").hide();
 		$("#focus_small").hide();
 
+		/*var admins = ["192.168.1.1","46.238.53.111","78.90.224.21"];
+    	var ip;
+    	$.get("http://ipinfo.io", function(response) {
+			ip = response.ip;
+			alert(ip);
+		}, "jsonp");
+
+    	var admin = false;
+		if (jQuery.inArray(ip,admins) != -1) {
+			admin = true;
+		}*/
+
 		$(document).ready(function() {
 			$(".gal_images").click(function(event) {
 
-	        	var fimg = document.createElement('img');
-	        	fimg.src = 'Gallery/Pictures/photography_gallery/' + event.target.alt + '.jpg';
-	        	fimg.setAttribute('alt', event.target.alt);
-	        	fimg.setAttribute('id', 'fimg');
+	        	var fimg = $('<img id="fimg">'); 
+				fimg.attr('src', 'Gallery/Pictures/photography_gallery/' + event.target.alt + '.jpg');
+	        	fimg.attr('alt', event.target.alt);
 
-	        	document.getElementById('focus_small').appendChild(fimg);
+	        	$('#focus_small').append(fimg);
+
+	        	/*if (admin) {
+
+		        	var form = $("<form method=\"POST\" id=\"image_deletion_form\"></form>");
+		        	form.append('<input type="hidden" name="image_id" value="' + event.target.alt + '.jpg" >');
+		        	form.append('<input type="submit" name="DeleteImage" value="Delete Image" >');
+
+		        	$('#focus_small').append(form);
+
+		        }*/
 
 	        	$("#focus_big").fadeToggle();
 	        	$("#focus_small").fadeToggle(1000);
@@ -109,13 +103,16 @@
 	   		});
 
 			$("#focus_big").click(function(event) {
+
 				$("#focus_small").fadeToggle();
 	        	$("#focus_big").fadeToggle();
 
-	        	var fimg = document.getElementById('fimg')
-	        	document.getElementById('focus_small').removeChild(fimg);
+	        	$('#fimg').remove();
+	        	//if (admin) $('#focus_small').remove('#image_deletion_form');
 	   		});
 	   	});
+
+		
 
 		</script>
 
