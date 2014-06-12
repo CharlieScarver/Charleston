@@ -20,7 +20,7 @@ if (isset($_POST['DeleteImage'])) { // Delete Image => name
 	while($row = mysql_fetch_array($results)) { 
 		$ext = $row['Extension'];
 	}
-	echo "ext - {$ext}";
+	//echo "ext - {$ext}";
 
 	$results = mysql_query("DELETE FROM `$gallery_name` WHERE `Alt` = '$img_id'");
 	// delete database entry
@@ -32,10 +32,15 @@ if (isset($_POST['DeleteImage'])) { // Delete Image => name
 			unlink($file);
 		} // delete image
 
-		$file = "Gallery/Pictures/Thumbnails/" . $_POST['image_id'] . "." . $ext;
+		$file = "Gallery/Pictures/Thumbnails/" . $_POST['image_id'] . "_small." . $ext;
 		if (file_exists($file) && is_readable($file)) {
 			unlink($file);
-		} // delete thumbnail
+		} // delete small thumbnail
+
+		$file = "Gallery/Pictures/Thumbnails/" . $_POST['image_id'] . "_big." . $ext;
+		if (file_exists($file) && is_readable($file)) {
+			unlink($file);
+		} // delete big thumbnail
 	}
 
 } 

@@ -25,8 +25,8 @@ function getImgData() {
 	}
 	$i--;
 
-	if (!isset($pics[$i]['ID']))
-		$pics[$i]['ID'] = 0;
+	if (!isset($pics[0]['ID']))
+		$pics[0]['ID'] = 0;
 
 	return $pics;
 }

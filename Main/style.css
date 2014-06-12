@@ -44,6 +44,11 @@ a {text-decoration: none; color: #F0E68C;}
 }
 
 
+#img_logo {
+	width: 128px;
+	height: 128px;
+}
+
 
 /*-------------------------- Form-Submits --------------------------------*/
 #menu_form > input, #import_form > input, 

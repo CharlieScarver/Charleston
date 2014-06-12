@@ -12,6 +12,8 @@
 					- Us
 			</p>
 
+			<img src="Other/charleston_logo_big.png" alt="charleston_logo" id="img_logo">
+
 			
 			<div id="sections_div">
 				<b>You can also check our:</b><br>

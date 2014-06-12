@@ -82,10 +82,18 @@
 			$(".gal_images").click(function(event) {
 
 	        	var fimg = $('<img id="fimg">'); 
-				fimg.attr('src', 'Gallery/Pictures/photography_gallery/' + event.target.alt + '.jpg');
+				fimg.attr('src', 'Gallery/Pictures/Thumbnails/' + event.target.alt + '_big.jpg');
 	        	fimg.attr('alt', event.target.alt);
 
 	        	$('#focus_small').append(fimg);
+
+	        	/*
+	        	if ($('#fimg').attr('height') > $('#fimg').attr('width')) {
+	        		var nh = $('#fimg').attr('height') + 100;
+	        		$('#focus_small').attr('width',nh);
+	        		alert(nh);
+	        	} else { alert($('#fimg').attr('width'), $('#fimg').attr('height'));}
+	        	*/
 
 	        	/*if (admin) {
 
