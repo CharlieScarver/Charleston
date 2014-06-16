@@ -396,6 +396,9 @@ button:hover {background-color: rgba(27,161,226,1.0);}
 
 #tip
 {	
+	position: absolute;
+	top: 7px;
+	right: 110px;
 	background-color: rgba(27,161,226,0.8);
 	width: 250px;
 	height: 90px;
@@ -405,7 +408,6 @@ button:hover {background-color: rgba(27,161,226,1.0);}
 	padding: 7px;
 	padding-top: 25px;
 	display: none;
-	float: right;
 
 	-moz-border-radius: 20px;		/*round edges*/
     -webkit-border-radius: 20px; 	/*round edges*/

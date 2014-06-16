@@ -43,16 +43,15 @@
 						<input type=\"submit\" name=\"NormalView\" value=\"Normal View\">				
 					</form>";
 			}
+
+
 		?>
+		
 
 		<div id="gallery_footer">
-			
-			<a href="#top">
-				<div id="top_anchor">
-				 UP 
-				</div>
-			</a>
-
+			<button id="top_anchor" onclick="$('html, body').animate({scrollTop: $('#header').offset().top}, 2000);">
+			UP
+			</button>
 		</div>
 
 		<div id="focus_big">
