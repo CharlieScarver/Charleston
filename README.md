@@ -1,7 +1,7 @@
 Charleston
 ==========
 
-http://charleston.ddns.net/
+http://charleston.onthewifi.com
 
 On **Charleston** you will find some of the pictures We, two non-professional photographers, take. 
 
