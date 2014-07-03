@@ -3,11 +3,38 @@
 		
 		<title> Charleston </title>
 		<meta charset="UTF-8">
+		<meta name="keywords" content="Charleston, Charlie Scarver, Danniesaurus, Charleston Photography, Charleston Blog, Charleston Relax, 37">
+		<meta name="description" content="Browse our Gallery and Blog or relax in the Relax section">
+		<meta name="author" content="Charlie Scarver">
 		<link rel="stylesheet" type="text/css" href="style.css" media="screen">
 		<script type="text/JavaScript" src="Gallery/gallery_script.js"></script>
 		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
 		<link rel="shortcut icon" href="Other/icon.png" />
+
+		<?php 
+		if(!session_start())
+			die("Session could not be resumed!");
+
+		$GLOBALS['admins'] = array("192.168.1.1","46.238.53.111");
+		$GLOBALS['client_ip'] = $_SERVER['REMOTE_ADDR'];
+
+		
+		if (!in_array($GLOBALS['client_ip'], $GLOBALS['admins'])) {
+
+			if (!mysql_connect("localhost","root","rootpass")) //Check if connection was successful
+				echo "Failed to connect!";
+
+			if (!mysql_select_db("charleston")) //Check if DB selection was successful
+				echo "Failed to select DB!";
+
+			$results = mysql_query("UPDATE views SET Count = Count + 1");
+				if (!$results)  // Succession check
+					echo "Failed to update! :c<br>";
+
+		}
+
+		?>
 
 	</head>
 
@@ -30,7 +57,7 @@
 
 
 		<div id="header">
-			<a href="http://charleston.zapto.org">
+			<a href="http://charleston.onthewifi.com">
 				<img src="Other/charleston.png" alt="charleston">
 			</a>
 		</div>
@@ -82,6 +109,9 @@
 					break;
 				case 'About':
 					require_once 'About/about.php';
+					break;
+				case 'Thanks':
+					require_once 'Thanks/thanks.php';
 					break;
 			}
 

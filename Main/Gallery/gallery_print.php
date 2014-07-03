@@ -8,7 +8,7 @@ if ($pics[0]['ID'] != 0) {
 	$i = count($pics) - 1;
 
 	while($i > -1) { 
-		if (in_array($ip, $GLOBALS['admins'])
+		if (in_array($GLOBALS['client_ip'], $GLOBALS['admins'])
 		&& file_exists($pics[$i]['ImgSource'])) {	 
 			echo "
 			<div class=\"image_container\">

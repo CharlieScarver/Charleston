@@ -1,4 +1,15 @@
-		
+		<?php
+
+		$page = 'http://charleston.onthewifi.com';
+
+		// or you could use $page = $_SERVER['PHP_SELF'] ;
+
+		include ( 'Hits/Example_Hitcounter_v1.0/counter.php');
+		addinfo($page);
+
+
+		?>
+
 		<div class="content">
 
 			<p class="content_para">
@@ -18,15 +29,83 @@
 			<div id="sections_div">
 				<b>You can also check our:</b><br>
 				<br>
-				<a href="http://charleston.zapto.org/Blog">
+				<a href="http://charleston.onthewifi.com/Blog">
 					<button id="blog_section_button" class="section_button">Blog</button>
 				</a>
 
-				<a href="http://charleston.zapto.org/Relax">
+				<a href="http://charleston.onthewifi.com/Relax">
 					<button id="relax_section_button" class="section_button">Relax section</button>
 				</a>
 			</div>
 			
+
+			<div id="gives_containter">
+				<?php
+
+				// --------------------Already Gave?-----------------------------------
+
+				if (!isset($_SESSION["{$GLOBALS['client_ip']}"])) {
+
+					echo "<div id=\"gives_div\">
+							<form method=\"POST\" id=\"gives_form\">
+								<label for=\"gives_img\" id=\"gives_para\">Give us<br> a Heart</label>
+								<input type=\"hidden\" name=\"action\" value=\"Submit Form\">
+								<input type=\"image\" src=\"Other/heart.png\" name=\"Give\" id=\"gives_img\" alt=\"heart\">				
+							</form>
+						</div>";
+
+				} else {
+
+					echo "<div id=\"gives_div\">
+							<pre id=\"gives_para\">Thanks for<br>your support!</pre>
+							<img src=\"Other/heart.png\" id=\"gives_img\" alt=\"heart\">				
+						</div>";
+
+				}
+
+				// ----------------------Give Form--------------------------------
+
+				if (isset($_POST['action'])) {
+					$_SESSION["{$GLOBALS['client_ip']}"] = 37;
+
+					if (!mysql_connect("localhost","root","rootpass")) //Check if connection was successful
+						echo "Failed to connect!";
+
+					if (!mysql_select_db("charleston")) //Check if DB selection was successful
+						echo "Failed to select DB!";
+
+					$results = mysql_query("UPDATE gives SET `Count` = `Count` + '1'");
+						if (!$results)  // Succession check
+							echo "Failed to update! :c<br>";
+
+					header("Location: http://charleston.onthewifi.com/?page=Thanks");
+					exit;
+				}
+
+				// ------------Gives Count-------------------
+
+				if (!mysql_connect("localhost","root","rootpass")) //Check if connection was successful
+					echo "Failed to connect!";
+
+				if (!mysql_select_db("charleston")) //Check if DB selection was successful
+					echo "Failed to select DB!";
+
+				$results = mysql_query("SELECT Count FROM gives");
+					if (!$results)  // Succession check
+						echo "Failed to update! :c<br>";
+
+				$row = mysql_fetch_array($results);
+				$gives_count = $row['Count'];
+
+				echo "
+				<div id=\"gives_count_div\">
+					<pre id=\"gives_count_para\">{$gives_count}</pre>
+					<img src=\"Other/heart.png\" alt=\"heart\" id=\"gives_count_img\">
+				</div>";
+
+				?>
+			</div>
+
 		</div>
 
 		<div class="content">

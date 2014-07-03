@@ -1,7 +1,7 @@
 body {background-image: url('https://scontent-a-fra.xx.fbcdn.net/hphotos-prn2/t31.0-8/966409_757720974247070_3270446095000078830_o.jpg'); 
 	background-repeat: no-repeat; background-attachment: fixed; background-position: center; background-color: rgb(127,127,127); }
 a {text-decoration: none; color: #F0E68C;}
-.titles {font: bold 18px Arial, Helvetica, sans-serif; color: #CCC;}
+.titles {font: bold 18px Arial, Helvetica, sans-serif; color: #CCC; font-size: 125%;}
 
 /*--------------------------- Main -------------------------------*/
 #menu_div {
@@ -116,7 +116,8 @@ a {text-decoration: none; color: #F0E68C;}
 }
 #relax_section_button:hover { color: #F0F8FF; background-color: rgb(100,149,237); }
 #blog_section_button:hover { color: #2B1B17; background-color: #488214; }
-
+#relax_section_button:focus { outline: none; }
+#blog_section_button:focus { outline: none; }
 
 /*-------------------- Follow us ------------------------------- */
 #follow_us_block {
@@ -234,13 +235,73 @@ a {text-decoration: none; color: #F0E68C;}
 	margin: 20px;
 }
 
+#separator { height: 85px; }
 
+/*------------------------- Gives --------------------------*/
+
+#gives_containter { height: 75px; }
+
+#gives_div {
+	float: right;
+	margin: 5px 40px 0 0;
+}
+
+#gives_img {
+	margin: 0 7px;
+	max-width: 42px;
+	max-height: 42px;
+	transition: all 0.1s linear;
+}
+#gives_img:focus { outline: none; }
+              
+#gives_para, #gives_count_para {
+	float: left;
+	padding: 0;
+	margin: 0;
+	font: bold 18px Arial, Helvetica, sans-serif; 
+	color: rgb(211,49,38);
+	transition: all 0.1s linear;
+}
+
+#gives_div:hover #gives_img { max-width: 50px; max-height: 50px; }
+#gives_div:hover #gives_para {  font-size: 130%; color: white; }
+
+
+/*------------------------- Gives Count --------------------------*/
+
+#gives_count_div {
+	float: left;
+	margin: 5px 0 0 40px;
+}
+
+#gives_count_img {
+	margin: 0 7px;
+	max-width: 42px;
+	max-height: 42px;
+	transition: all 0.1s linear;
+}
+#gives_count_img:focus { outline: none; }
+
+#gives_count_para { font-size: 250%; }
+
+
+#gives_count_div:hover > #gives_count_img { max-width: 50px; max-height: 50px; }
+#gives_count_div:hover > #gives_count_para {  font-size: 280%; color: white; }
 
 /*------------------------- About ----------------------------*/
 #about_content { text-align: center; }
 #us {border-radius: 20px; transition: all 0.3s linear;}
 #left_para {float: left; margin: 30px; }
 #right_para {float: right; margin: 30px; }
+
+/**/
+
+#thanks_content {
+	width: 400px;
+}
+
+#thanks_para { background-color: #FFB6C1; }
+#thanks_para > a {color: black;}
 
 /*------------------------- Blog ------------------------------*/
 .post { }

@@ -43,11 +43,11 @@
 		<button id="tip_button_show" onclick="showTip()"><b> :) </b></button>
 		<div id="tip"><p id="tip_text"> Use Full Screen (F11) for better experience :) </p></div>
 
-		<a id="photography_link" href="http://charleston.zapto.org"> 
+		<a id="photography_link" href="http://charleston.onthewifi.com"> 
 				Back to the Photography section
 		</a> 
 
-		<a href="http://charleston.zapto.org/Relax"> <p id="title"> CHARLESTON </p> </a>
+		<a href="http://charleston.onthewifi.com/Relax"> <p id="title"> CHARLESTON </p> </a>
 		
 		
 		<!--
@@ -55,10 +55,10 @@
 		<! onclick="toggleFullScreen()" -->
 
 		<?php
-
+		/*//	Login/Register/Logout are blocked
 		if(isset($_POST['Logout'])){ // If Logout is pressed 
 			unset($_SESSION['user']); // UNSET the Session from the current user
-			header("Location: http://charleston.zapto.org/Relax");
+			header("Location: http://charleston.onthewifi.com/Relax");
 		}
 
 		if (!isset($_SESSION['user'])) {
@@ -85,7 +85,7 @@
 					</form>
 				</div>';
 		}
-
+		*/
 		
 		if(isset($_GET['page'])) {
 			
@@ -129,7 +129,7 @@
 
 		//--------------Hits--------------------------
 		/*
-		$page = 'http://charleston.zapto.org/Relax';
+		$page = 'http://charleston.onthewifi.com/Relax';
 
 		// or you could use $page = $_SERVER['PHP_SELF'] ;
 

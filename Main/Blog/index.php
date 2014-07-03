@@ -13,12 +13,12 @@
 		<a href="#top"></a>
 
 		<div id="header">
-			<a href="http://charleston.zapto.org/Blog">
+			<a href="http://charleston.onthewifi.com/Blog">
 				<img src="../Other/charleston.png" alt="charleston">
 			</a>
 		</div>		
 
-		<a id="photography_link" href="http://charleston.zapto.org"> 
+		<a id="photography_link" href="http://charleston.onthewifi.com"> 
 				Back to the Photography section
 		</a> 
 

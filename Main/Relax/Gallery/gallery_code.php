@@ -34,7 +34,7 @@ if(isset($_POST['Import'])) {
 					echo "Failed to connect!";
 				}
 
-				if (!mysql_select_db("charleston")) { //Check is DB selection was successful
+				if (!mysql_select_db("charleston")) { //Check if DB selection was successful
 					echo "Failed to select DB!";
 				}
 
