@@ -49,10 +49,6 @@
 
 		<a href="http://charleston.onthewifi.com/Relax"> <p id="title"> CHARLESTON </p> </a>
 		
-		
-		<!--
-		<p id="subtitle" onclick="toggleFullScreen()"> Use Full Screen (F11) for better experience :) </p>
-		<! onclick="toggleFullScreen()" -->
 
 		<?php
 		/*//	Login/Register/Logout are blocked
@@ -86,6 +82,13 @@
 				</div>';
 		}
 		*/
+
+		echo '<div id="buttons">
+					<form method="GET" id="menu_form">
+						<input type="submit" name="page" id="theme_selector" value="Themes" class="submits">
+					</form>	
+				</div>';
+
 		
 		if(isset($_GET['page'])) {
 			

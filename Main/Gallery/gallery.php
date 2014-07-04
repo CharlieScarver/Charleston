@@ -1,3 +1,15 @@
+		<?php
+
+		$page = 'http://charleston.onthewifi.com/?page=Gallery';
+
+		// or you could use $page = $_SERVER['PHP_SELF'] ;
+
+		include ( 'Hits/Example_Hitcounter_v1.0/counter.php');
+		addinfo($page);
+
+
+		?>
+
 
 		<div class="content">
 			

@@ -13,7 +13,7 @@
 
 				$_SESSION['theme'] = $_POST['theme'];
 				echo "Theme changed to {$_POST['theme']}<br>";
-				header("Location: http://charleston.zapto.org/Relax");
+				header("Location: http://charleston.onthewifi.com/Relax");
 				exit;
 			}
 

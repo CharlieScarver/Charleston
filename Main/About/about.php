@@ -1,4 +1,15 @@
-		
+		<?php
+
+		$page = 'http://charleston.onthewifi.com/?page=About';
+
+		// or you could use $page = $_SERVER['PHP_SELF'] ;
+
+		include ( 'Hits/Example_Hitcounter_v1.0/counter.php');
+		addinfo($page);
+
+
+		?>
+
 		<div class="content" id="about_content">
 			<p class="content_para"> 
 			<b>I love you.</b> <br>
