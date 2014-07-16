@@ -51,7 +51,7 @@
 		
 
 		<?php
-		/*//	Login/Register/Logout are blocked
+		//	Login/Register/Logout are blocked
 		if(isset($_POST['Logout'])){ // If Logout is pressed 
 			unset($_SESSION['user']); // UNSET the Session from the current user
 			header("Location: http://charleston.onthewifi.com/Relax");
@@ -63,6 +63,8 @@
 						<input type="submit" name="page" id="login" value="Log in" class="submits">
 						|
 						<input type="submit" name="page" id="register" value="Register" class="submits">
+						|
+						<input type="submit" name="page" id="theme_selector" value="Themes" class="submits">
 					</form> 
 				</div>';
 		} else {
@@ -72,8 +74,7 @@
 						<input type="submit" name="page" id="profile" value="Profile" class="submits">
 						<input type="submit" name="page" id="gallery" value="Gallery" class="submits">
 						<input type="submit" name="page" id="theme_selector" value="Themes" class="submits">
-						|
-						<input type="submit" name="page" id="questions" value="Questions" class="submits">
+						
 					</form>	
 						|
 					<form method="POST" id="bi_form">
@@ -81,14 +82,18 @@
 					</form>
 				</div>';
 		}
-		*/
+		
 
+		// <input type="submit" name="page" id="questions" value="Questions" class="submits">
+		// Questions button ^
+
+		/*
 		echo '<div id="buttons">
 					<form method="GET" id="menu_form">
 						<input type="submit" name="page" id="theme_selector" value="Themes" class="submits">
 					</form>	
 				</div>';
-
+		*/
 		
 		if(isset($_GET['page'])) {
 			

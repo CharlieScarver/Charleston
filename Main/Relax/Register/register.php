@@ -26,7 +26,7 @@
 				<br>";
 
 				require_once 'recaptchalib.php';
-				$publickey = "6Ld-W-wSAAAAAMDMGPp7a4CdYRZojKYVAe0B6erd";
+				$publickey = "6Lc-__YSAAAAAAK8fDz0wn2BgHakq16X5sgLXqc4";
 				echo recaptcha_get_html($publickey);
 
 			echo"<br>

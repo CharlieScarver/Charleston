@@ -38,7 +38,7 @@ if(isset($_POST['Register'])) { // If the Register button has been pressed
 			
 			//------Beginning of CAPTCHA Code-------
 			require_once 'recaptchalib.php';
-			$privatekey = "6Ld-W-wSAAAAAHOIfcMayEDduZTWuZ_FUNp4tsmR";
+			$privatekey = "6Lc-__YSAAAAALXkaLaOG2t0ndwwYNNKT7IvUylh";
 			$resp = recaptcha_check_answer($privatekey, 
 				$_SERVER["REMOTE_ADDR"], 
 				$_POST["recaptcha_challenge_field"], 
@@ -63,7 +63,7 @@ if(isset($_POST['Register'])) { // If the Register button has been pressed
 					if (!$table_create)  // Succession check
 						echo "Failed to create gallery table :c<br>";
 					else {
-						header("Location: http://charleston.zapto.org/?page=Reg_Success");
+						header("Location: http://charleston.onthewifi.com/Relax/?page=Reg_Success");
 						exit;
 					}
 				}

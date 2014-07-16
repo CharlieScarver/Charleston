@@ -28,7 +28,7 @@
 					if ($password == $row[1]) {
 						$_SESSION['user'] = $user; // SET the Session to the current User
 						echo "User ", $row[0], " logged<br>";
-						header("Location: http://charleston.zapto.org/Relax");
+						header("Location: http://charleston.onthewifi.com/Relax");
 						exit;
 					} else {
 						echo "Wrong Password!<br>";

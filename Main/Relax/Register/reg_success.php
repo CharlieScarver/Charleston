@@ -6,7 +6,7 @@
 				Registration Successful! ^-^
 			</p>
 			
-			<a href="http://charleston.zapto.org/?page=Log+in">	
+			<a href="http://charleston.onthewifi.com/Relax/?page=Log+in">	
 				<p id="block_content">
 					You can now log in!
 				</p>
