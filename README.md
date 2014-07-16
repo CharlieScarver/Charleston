@@ -21,10 +21,13 @@ Sometimes you just want to lean back on your chair and give yourself a break.
 
 The Relax section offers its **calming and dreamy atmospere** to you.
 
+You can choose from two themes: **blue and red**, whichever fits your mood more.
+
+ - Note: **Google Chrome** users can also listen to the Rurutia's Hyousa song (music box version).
+
+=
+
 Enjoy your visit. 
-
-
 
 - Charleston's crew
 
-=
