@@ -1,6 +1,6 @@
 <html>
 	<head>
-		
+		<?php echo $_SERVER['REQUEST_URI']; ?>
 		<title> Charleston </title>
 		<meta charset="UTF-8">
 		<meta name="keywords" content="Charleston, Charlie Scarver, Danniesaurus, Charleston Photography, Charleston Blog, Charleston Relax, 37">

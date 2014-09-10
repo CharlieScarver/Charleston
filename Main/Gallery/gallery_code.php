@@ -20,13 +20,13 @@ if(isset($_POST['Import'])) {
 	{
 		if ($_FILES["file"]["error"] > 0) {
 		  echo "Error: " . $_FILES["file"]["error"] . "<br>";
-		} else {		
+		} else {	
 
 			$name = explode('.', $_FILES["file"]["name"]);
 			$alt = $name[0];
 			$img_src = "Gallery/Pictures/photography_gallery/";
 
-			if (file_exists($img_src.$_FILES["file"]["name"])) {
+			if (file_exists($img_src.$_FILES["file"]["name"])) { 
 		     	echo $_FILES["file"]["name"] . " already exists. <br>";
 		    } else {
 		      	if (!move_uploaded_file($_FILES["file"]["tmp_name"], $img_src.$_FILES["file"]["name"])) {

@@ -124,7 +124,7 @@
 
 				echo "<div id=\"separator\"></div>";
 
-				
+				require_once 'gallery_code.php';
 				require_once 'gallery_delete.php';
 				require_once 'gallery_print.php';
 			?>
