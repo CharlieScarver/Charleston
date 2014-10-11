@@ -66,6 +66,8 @@ a {text-decoration: none; color: #F0E68C;}
 	transition: all 0.50s linear;
 	border-radius: 20px; 
 	margin-bottom: 20px;
+	cursor: pointer;
+	z-index: 2; /*for the cursor to work*/
 }
 #menu_form > input {padding: 15px 0; width: 32%; }
 #import_form > input {padding: 15px;}
@@ -112,6 +114,8 @@ a {text-decoration: none; color: #F0E68C;}
 
 	background-color: rgb(176,196,222);
 	color: black;
+	cursor: pointer;
+	z-index: 4; /*for the cursor to work*/
 	transition: all 0.5s linear;
 }
 #relax_section_button:hover { color: #F0F8FF; background-color: rgb(100,149,237); }
@@ -194,6 +198,7 @@ a {text-decoration: none; color: #F0E68C;}
 	width: 30%;
 	max-width: 750px; 
 	max-height: 750px; 
+	cursor: pointer;
 }
 
 #gallery_footer {
@@ -291,8 +296,8 @@ a {text-decoration: none; color: #F0E68C;}
 /*------------------------- About ----------------------------*/
 #about_content { text-align: center; }
 #us {border-radius: 20px; transition: all 0.3s linear;}
-#left_para {float: left; margin: 30px; }
-#right_para {float: right; margin: 30px; }
+#left_para {float: left; margin: 30px 20px; }
+#right_para {float: right; margin: 30px 20px; }
 
 /**/
 

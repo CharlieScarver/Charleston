@@ -1,6 +1,6 @@
 		<?php
 
-		$page = 'http://charleston.onthewifi.com/?page=About';
+		$page = 'page=About';
 
 		// or you could use $page = $_SERVER['PHP_SELF'] ;
 

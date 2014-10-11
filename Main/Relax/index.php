@@ -135,15 +135,6 @@
 			}
 		}
 
-		//--------------Hits--------------------------
-		/*
-		$page = 'http://charleston.onthewifi.com/Relax';
-
-		// or you could use $page = $_SERVER['PHP_SELF'] ;
-
-		include ( 'Hits/Example_Hitcounter_v1.0/counter.php');
-		addinfo($page);
-		*/
 
 		?>
 

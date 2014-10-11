@@ -1,10 +1,11 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<?php echo $_SERVER['REQUEST_URI']; ?>
+
 		<title> Charleston </title>
 		<meta charset="UTF-8">
 		<meta name="keywords" content="Charleston, Charlie Scarver, Danniesaurus, Charleston Photography, Charleston Blog, Charleston Relax, 37">
-		<meta name="description" content="Browse our Gallery and Blog or relax in the Relax section">
+		<meta name="description" content="Check out our Gallery of selected photos!">
 		<meta name="author" content="Charlie Scarver">
 		<link rel="stylesheet" type="text/css" href="style.css" media="screen">
 		<script type="text/JavaScript" src="Gallery/gallery_script.js"></script>
@@ -94,6 +95,8 @@
 
 			</form>
 		</div>	
+
+		<noscript>Sorry, your browser does not support JavaScript!</noscript>
 		
 
 		<?php
