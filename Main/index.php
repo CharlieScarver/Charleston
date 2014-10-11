@@ -79,7 +79,7 @@
 					<img src="Other/deviantart.png" id="deviantart_icon" class="follow_icons" alt="deviantart_icon">
 				</a>
 
-				<a href="https://github.com/CharlieScarver">
+				<a href="https://github.com/CharlieScarver/Charleston">
 					<img src="Other/github.png" id="github_icon" class="follow_icons" alt="github_icon">
 				</a>
 			</div>
