@@ -13,7 +13,7 @@ We love photography and would like to share **our passion** with you.
 
 When you're done browsing the Gallery you can check our **Quote Blog**.
 
-You'll find **quotes by some great people** that we admire, some **song quotes** and just a few **our own quotes**.
+You'll find **quotes by some great people** that we admire, some **song quotes** and just a few original ones.
 
 ### Relax
 
