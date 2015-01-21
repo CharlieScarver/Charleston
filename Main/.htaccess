@@ -1,2 +1,7 @@
 ErrorDocument 404 /Errors/notfound.html
 ErrorDocument 403 /Errors/permdenied.html
+
+<files config.php>
+order allow,deny
+deny from all
+</files>

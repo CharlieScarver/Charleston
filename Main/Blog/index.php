@@ -22,6 +22,10 @@
 				Back to the Photography section
 		</a> 
 
+		<button id="top-anchor" onclick="$('html, body').animate({scrollTop: $('#header').offset().top}, 2000);">
+		UP
+		</button>
+
 		<?php
 
 		$page = 'http://charleston.onthewifi.com/Blog';

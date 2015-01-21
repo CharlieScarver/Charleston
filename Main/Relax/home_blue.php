@@ -23,7 +23,7 @@
 				you can share them with me on <!-skype - <b>fantasy376</b> 
 				or -<facebook - <b>Saasho Apostolov</b>.<br>
 				<br>-->
-				<a href="http://wallike.com/wp-content/uploads/2013/10/Fantasy-Night-Sky.jpg">Background Image: <b>FantasyNightSky</b> </a>
+				<a href="http://charleston.onthewifi.com/Relax/Fantasy-Night-Sky.jpg">Background Image: <b>FantasyNightSky</b> </a>
 				<br><br>
 				<a href="http://www.youtube.com/watch?v=JmwAI-Q0R7c">Music: <b>Rurutia - Hyousa [musicbox version]</b> </a>
 				<br><br>

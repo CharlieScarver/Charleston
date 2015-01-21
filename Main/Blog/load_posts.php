@@ -1,6 +1,7 @@
+<?php require_once '../config.php'; ?>
 <?php
 
-$connect = mysql_connect("localhost","root","rootpass");
+$connect = mysql_connect($dbhost,$dbusr,$dbpw);
 	if (!$connect)
 		echo "Failed to connect!";
 

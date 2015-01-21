@@ -1,3 +1,4 @@
+<?php require_once '../config.php'; ?>
 		<div id="new_post_div">	
 			<form id="new_post_form" method="POST">
 
@@ -10,7 +11,7 @@
 				<br>
 				<br>
 				<?php
-					$GLOBALS['admins'] = array("192.168.1.1","46.238.53.111");
+					$GLOBALS['admins'] = array("192.168.1.1",$aip2);
 					$ip = $_SERVER['REMOTE_ADDR'];
 
 					if (in_array($ip, $GLOBALS['admins'])) {
@@ -25,7 +26,7 @@
 		</div>
 
 		<?php
-			$GLOBALS['admins'] = array("192.168.1.1","46.238.53.111");
+			$GLOBALS['admins'] = array("192.168.1.1",$aip2);
 			$ip = $_SERVER['REMOTE_ADDR'];
 
 			if (in_array($ip, $GLOBALS['admins'])) {

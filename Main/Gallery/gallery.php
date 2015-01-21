@@ -1,3 +1,4 @@
+<?php require_once 'config.php'; ?>
 		<?php
 
 		$page = 'page=Gallery';
@@ -44,7 +45,7 @@
 			if (isset($_POST['action'])) {
 				$_SESSION["{$GLOBALS['client_ip']}"] = 37;
 
-				if (!mysql_connect("localhost","root","rootpass")) //Check if connection was successful
+				if (!mysql_connect($dbhost,$dbusr,$dbpw)) //Check if connection was successful
 					echo "Failed to connect!";
 
 				if (!mysql_select_db("charleston")) //Check if DB selection was successful
@@ -60,7 +61,7 @@
 
 			// ------------------Gives Count--------------------------------------
 
-			if (!mysql_connect("localhost","root","rootpass")) //Check if connection was successful
+			if (!mysql_connect($dbhost,$dbusr,$dbpw)) //Check if connection was successful
 				echo "Failed to connect!";
 
 			if (!mysql_select_db("charleston")) //Check if DB selection was successful
@@ -106,9 +107,9 @@
 
 			// ------------------Gallery Views------------------------------------
 
-			if (strcmp($GLOBALS['client_ip'], "192.168.1.1") && strcmp($GLOBALS['client_ip'],"46.238.53.111")) {
+			if (strcmp($GLOBALS['client_ip'], "192.168.1.1") && strcmp($GLOBALS['client_ip'],$aip2)) {
 
-				if (!mysql_connect("localhost","root","rootpass")) //Check if connection was successful
+				if (!mysql_connect($dbhost,$dbusr,$dbpw)) //Check if connection was successful
 					echo "Failed to connect!";
 
 				if (!mysql_select_db("charleston")) //Check if DB selection was successful
@@ -162,7 +163,7 @@
 		$("#focus_big").hide();
 		$("#focus_small").hide();
 
-		/*var admins = ["192.168.1.1","46.238.53.111","78.90.224.21"];
+		/*var admins = ["192.168.1.1",$aip2,"78.90.224.21"];
     	var ip;
     	$.get("http://ipinfo.io", function(response) {
 			ip = response.ip;

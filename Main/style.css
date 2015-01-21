@@ -44,6 +44,7 @@ a {text-decoration: none; color: #F0E68C;}
 	font: bold 18px Arial, Helvetica, sans-serif;
 	color: #CCC;
 	border-radius: 20px; 
+	cursor: pointer;
 }
 #top_anchor:focus { outline: none; }
 
@@ -236,7 +237,8 @@ a {text-decoration: none; color: #F0E68C;}
 
 #focus_small > img {
 	max-width: 90%; 
-	max-height: 90%;
+	max-height: 800px;
+	/* 90% bugs it */
 	margin: 20px;
 }
 
@@ -270,7 +272,6 @@ a {text-decoration: none; color: #F0E68C;}
 
 #gives_div:hover #gives_img { max-width: 50px; max-height: 50px; }
 #gives_div:hover #gives_para {  font-size: 130%; color: white; }
-
 
 /*------------------------- Gives Count --------------------------*/
 

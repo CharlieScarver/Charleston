@@ -1,3 +1,4 @@
+<?php require_once '../config.php'; ?>
 <?php
 
 echo "<style> #main_block {width: 750px;} #block_content {width: 550px;}</style>";
@@ -6,7 +7,7 @@ echo '<p id="block_title"> ', $_SESSION['user'], '\'s Profile </p>';
 
 //--------Connect to MySQL and select DataBase--------------
 
-if (!mysql_connect("localhost","root","rootpass")) //connect to MySQL 
+if (!mysql_connect($dbhost,$dbusr,$dbpw)) //connect to MySQL 
 //Check is connection was successful
 	die("Failed to connect!");
 

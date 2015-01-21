@@ -2,7 +2,7 @@
 
 if (isset($_POST['DeleteImage'])) { // Delete Image => name
 
-	$connect = mysql_connect("localhost","root","rootpass"); //connect to DB
+	$connect = mysql_connect($dbhost,$dbusr,$dbpw); //connect to DB
 		if (!$connect) //Check is connection was successful
 			echo "Failed to connect!";
 

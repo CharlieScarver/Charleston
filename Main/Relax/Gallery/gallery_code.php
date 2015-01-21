@@ -1,3 +1,4 @@
+<?php require_once '../config.php'; ?>
 <?php
 
 if(isset($_POST['Import'])) {
@@ -29,7 +30,7 @@ if(isset($_POST['Import'])) {
 		      	move_uploaded_file($_FILES["file"]["tmp_name"], "Gallery/Pictures/" . $_SESSION['user'] . "/" . $_FILES["file"]["name"]);
 //		      	echo "Stored in: " . "Gallery/Pictures/" . $_FILES["file"]["name"];
 
-		      	$connect = mysql_connect("localhost","root","rootpass"); //connect to DB
+		      	$connect = mysql_connect($dbhost,$dbusr,$dbpw); //connect to DB
 				if (!$connect) { //Check is connection was successful
 					echo "Failed to connect!";
 				}

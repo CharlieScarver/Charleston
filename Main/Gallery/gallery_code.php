@@ -1,3 +1,4 @@
+<?php require_once 'config.php'; ?>
 <?php
 require_once 'data_getter.php';
 require_once 'thumbnail_creator.php';
@@ -43,7 +44,7 @@ if(isset($_POST['Import'])) {
 			      		if (!createBigThumb("{$img_src}{$alt}.{$extension}", "{$thumb_src}{$alt}", 750)) {
 			      		echo "Failed to create big thumbnail! <br>";
 			      		} else {
-							$pics = getImgData();
+							$pics = getImgData($dbhost,$dbusr,$dbpw);
 							$i = count($pics) - 1;
 							$id = $pics[$i]['ID'] + 1;
 

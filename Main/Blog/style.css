@@ -32,6 +32,24 @@ textarea {resize: none;}
 
 .post_content {font: bold 18px Arial, Helvetica, sans-serif;}
 
+#top-anchor {
+		background: #6A8455;
+	/*width: 20px;*/
+	padding: 15px 10px;
+	position: fixed; 
+	bottom: 15px;
+	right: 15px;
+	text-align: center;
+	font: bold 18px Arial, Helvetica, sans-serif;
+	border-radius: 20px;
+	border: none;
+	transition: all 0.50s linear;
+	cursor: pointer;
+}
+#top-anchor:hover {background-color: #488214;}
+#top-anchor:focus {outline: none;}
+
+
 /*--------------------------- New Post -------------------------------*/
 #new_post_div {
 	width: 280px;
@@ -57,7 +75,7 @@ textarea {resize: none;}
 	transition: all 0.50s linear;
 }
 
-#new_post_button { margin: 30px auto 0 auto; display: block; background-color: rgba(0,0,0,0.6); }
+#new_post_button { margin: 30px auto 0 auto; display: block; background-color: rgba(0,0,0,0.6); cursor: pointer; }
 #new_post_button:hover { background-color: rgba(72,130,20,0.8); color: black;}
 #new_post_button:active { transition: all 0.01s linear; color: #CCC;}
 

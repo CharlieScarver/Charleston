@@ -1,3 +1,4 @@
+<?php require_once '../config.php'; ?>
 
 		<br>
 
@@ -11,7 +12,7 @@
 
 			//--------Connect to MySQL and select DataBase--------------
 
-			if (!mysql_connect("localhost","root","rootpass")) //connect to MySQL 
+			if (!mysql_connect($dbhost,$dbusr,$dbpw)) //connect to MySQL 
 			//Check is connection was successful
 				die("Failed to connect!");
 

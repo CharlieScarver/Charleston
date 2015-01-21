@@ -1,8 +1,9 @@
+<?php require_once 'config.php'; ?>
 <?php
 
 require_once 'data_getter.php';
 
-$pics = getImgData();
+$pics = getImgData($dbhost,$dbusr,$dbpw);
 if ($pics[0]['ID'] != 0) {
 
 	$i = count($pics) - 1;

@@ -1,3 +1,4 @@
+<?php require_once 'config.php'; ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -17,13 +18,13 @@
 		if(!session_start())
 			die("Session could not be resumed!");
 
-		$GLOBALS['admins'] = array("192.168.1.1","46.238.53.111");
+		$GLOBALS['admins'] = array("192.168.1.1",$aip2);
 		$GLOBALS['client_ip'] = $_SERVER['REMOTE_ADDR'];
 
 		
 		if (!in_array($GLOBALS['client_ip'], $GLOBALS['admins'])) {
 
-			if (!mysql_connect("localhost","root","rootpass")) //Check if connection was successful
+			if (!mysql_connect($dbhost,$dbusr,$dbpw)) //Check if connection was successful
 				echo "Failed to connect!";
 
 			if (!mysql_select_db("charleston")) //Check if DB selection was successful

@@ -1,7 +1,8 @@
 <?php
 
-function getImgData() {
-	$connect = mysql_connect("localhost","root","rootpass"); //connect to DB
+function getImgData($host,$usr,$pw) {
+	
+	$connect = mysql_connect($host,$usr,$pw); //connect to DB
 		if (!$connect) //Check is connection was successful
 			echo "Failed to connect!";
 

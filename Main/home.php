@@ -68,7 +68,7 @@
 				if (isset($_POST['action'])) {
 					$_SESSION["{$GLOBALS['client_ip']}"] = 37;
 
-					if (!mysql_connect("localhost","root","rootpass")) //Check if connection was successful
+					if (!mysql_connect($dbhost,$dbusr,$dbpw)) //Check if connection was successful
 						echo "Failed to connect!";
 
 					if (!mysql_select_db("charleston")) //Check if DB selection was successful
@@ -84,7 +84,7 @@
 
 				// ------------Gives Count-------------------
 
-				if (!mysql_connect("localhost","root","rootpass")) //Check if connection was successful
+				if (!mysql_connect($dbhost,$dbusr,$dbpw)) //Check if connection was successful
 					echo "Failed to connect!";
 
 				if (!mysql_select_db("charleston")) //Check if DB selection was successful

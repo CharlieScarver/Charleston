@@ -1,7 +1,8 @@
+<?php require_once '../config.php'; ?>
 <?php 
 
 if(isset($_POST['NewPost'])) {
-	$connect = mysql_connect("localhost","root","rootpass");
+	$connect = mysql_connect($dbhost,$dbusr,$dbpw);
 		if (!$connect)
 			echo "Failed to connect!";
 
@@ -20,7 +21,7 @@ $results = mysql_query("SELECT * FROM `blog_posts`");
 		$author = htmlspecialchars(trim($_POST['Author']), ENT_QUOTES);		
 		$content = htmlspecialchars(trim($_POST['Content']), ENT_QUOTES);
 		$content = str_replace("\r\n", "<br>", $content);
-		$content = str_replace("<br>   -", "<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; -", $content);
+		$content = str_replace("<br> -", "<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; -", $content);
 
 
 		date_default_timezone_set("Europe/Sofia");
