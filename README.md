@@ -2,7 +2,9 @@ Charleston
 ==========
 
 http://charleston.onthewifi.com
+
 http://charleston.ddns.net
+
 http://charleston.zapto.org
 
 ### Photography
